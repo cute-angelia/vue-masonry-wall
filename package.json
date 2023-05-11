@@ -1,0 +1,61 @@
+{
+  "name": "vue-masonry-wall",
+  "version": "1.0.1",
+  "description": "Responsive masonry layout with SSR support and zero dependencies for Vue 3.",
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "plugin",
+    "component",
+    "masonry",
+    "wall"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "require": "./dist/index.umd.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "dist/index.umd.js",
+  "browser": "dist/index.mjs",
+  "module": "dist/index.mjs",
+  "unpkg": "dist/index.umd.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist/*",
+    "src/**/*.vue"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "bundlesize": "bundlesize",
+    "dev": "vite build --watch",
+    "lint": "yeger-lint",
+    "test": "vitest",
+    "check:tsc": "tsc --noEmit",
+    "check:vue": "vue-tsc --noEmit"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/types": "7.21.5",
+    "@types/resize-observer-browser": "0.1.7",
+    "@vitejs/plugin-vue": "4.2.1",
+    "@vue/test-utils": "2.3.2",
+    "bundlesize2": "0.0.31",
+    "flush-promises": "1.0.2",
+    "jsdom": "22.0.0",
+    "lightgallery": "github:cute-angelia/lightGallery",
+    "typescript": "5.0.4",
+    "vite": "4.3.3",
+    "vue": "3.2.47",
+    "vue-tsc": "1.6.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "vite-plugin-lib": "^1.2.2"
+  }
+}
